@@ -12,7 +12,7 @@ def parse_command_line_args():
                             help='Bootstrap server address')
     arg_parser.add_argument("--schema-registry", required=False, default="http://localhost:8081",
                             help="Schema Registry url")
-    arg_parser.add_argument("--schema-file", required=False, default="create-user-request.avsc",
+    arg_parser.add_argument("--schema-file", required=False, default="create_user_request.avsc",
                             help="File name of avro schema to use")
     return arg_parser.parse_args()
 
