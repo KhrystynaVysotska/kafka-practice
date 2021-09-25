@@ -28,6 +28,6 @@ CREATE TABLE amount_of_products_by_category_for_the_last_five_minute AS
         category,
         COUNT(category) as count
     FROM products_raw_data
-    WINDOW HOPING (SIZE 5 MINUTES, ADVANCE BY 1 MINUTE)
+    WINDOW HOPPING (SIZE 5 MINUTES, ADVANCE BY 1 MINUTE)
     GROUP BY category
     EMIT CHANGES;
