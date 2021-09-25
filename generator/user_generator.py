@@ -12,7 +12,7 @@ class UserGenerator(object):
         for i in range(amount_of_batches):
             users: List[User] = list()
             batch_size = Random().randint(a=batch_size_from, b=batch_size_to)
-            print(f"Batch #{i} size {batch_size}")
+            print(f"Batch #{i + 1} size {batch_size}")
             for _ in range(batch_size):
                 users.append(User.generate_random_user())
             yield users
