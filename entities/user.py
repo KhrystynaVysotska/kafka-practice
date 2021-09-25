@@ -4,6 +4,7 @@ from faker import Faker
 class User(object):
     def __init__(self, email: str, first_name: str, last_name: str, age: int, address: str, gender: str, job: str,
                  has_children_under_sixteen: bool):
+        self.key = email
         self.email = email
         self.first_name = first_name
         self.last_name = last_name
