@@ -4,6 +4,10 @@
     "name": "CreateUserRequest",
     "fields": [
         {
+            "name": "key",
+            "type": "string"
+        },
+        {
             "name": "email",
             "type": "string"
         },
