@@ -1,7 +1,6 @@
 from random import Random
 from time import sleep
 from typing import List
-
 from entities.user import User
 
 
